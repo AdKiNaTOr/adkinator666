@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+html {
+  background-image: url("../Gifs/bg.gif");
+}
+#form, #h1text{
+  position: absolute;
+  right: 450px;
+  bottom: 600px;
+}
+#h1text {
+  color: red;
+  text-decoration: underline;
+  font-size: 60px
+}
+
+#Yes {
+  font-size: 100px;
+  position: absolute;
+  bottom: -200px;
+  text-align: center;
+  text-decoration: none;
+  background: #d6002b;
+  background: linear-gradient(90deg, rgba(214, 0, 43, 1) 0%, rgba(69, 8, 8, 1) 50%, rgba(140, 14, 14, 1) 100%);
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out 0s;
+  right: 800px
+}
+
+#Yes:hover {
+  transform: scale(1.5);
+  background-color: green
+}
+
+#No {
+  font-size: 100px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background: #d6002b;
+  background: linear-gradient(90deg, rgba(214, 0, 43, 1) 0%, rgba(69, 8, 8, 1) 50%, rgba(140, 14, 14, 1) 100%);
+  border-radius: 10px;
+  width: 200px;
+  right: 70px;
+  bottom: -200px;
+  transition: transform 0.2s ease 0s;
+}
+
+#No:hover {
+  background-color: red;
+  transform: scale(1.5);
+}
