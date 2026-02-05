@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  background: url("../Img/BgFor3page.png");
+}
+
+
+#animtest {
+  position: absolute;
+  background: red;
+  width: 400px;
+  height: 500px;
+  transform: translateX(190%);
+  top: 200px;
+  border-radius: 10px;
+  animation: a 1s ease-in 0.1s infinite alternate forwards;
+  border: 2px solid red;
+  box-shadow:
+    0 0 5px red,
+    0 0 15px #9e050c,
+    0 0 30px #630308,
+    0 0 15px #400104
+}
+
+@keyframes a {
+  from { background-color: #63020a; border-radius: 10px}
+  to { background: #db0012; border-radius: 20px}
+}
+
+#labelForInfo {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50;
+  animation: b 1s ease-in 0.1s infinite alternate forwards;
+}
+
+@keyframes b {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-4px, 6px); }
+  50%  { transform: translate(3px, -5px); }
+  75%  { transform: translate(-4px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
+#name, #lastname{
+  transform: translate(90px,100px);
+  background: black;
+  border-radius: 10px;
+  width: 200px;
+  height: 20px;
+  color: red;
+}
+
+#genderText {
+  color: white;
+  transform: translate(90px,120px);
+  font-size: 20px;
+  display: block;
+  text-shadow:
+    0 0 5px white,
+    0 0 50px #ebeced,
+    0 0 90px #8f9194
+}
+
+
+#genderForm {
+  background: black;
+  width: 200px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 100px;
+  transform: translate(90px, 100px);
+}
+
+#genderForm label{
+  font-style: italic;
+}
+
+
+#male {
+  animation: textColorMale 3s infinite alternate;
+  color: #03dffc;
+  text-shadow:
+  0 0 5px  #03dffc,
+  0 0 15px #03dffc,
+  0 0 30px #00ffff;
+}
+
+@keyframes textColorMale {
+  from {
+    color: #03dffc;
+  }
+
+  to {
+    color: #00e1ff;
+  }
+}
+
+
+#female {
+  animation: textColorFemale 3s infinite alternate;
+  color: #f000a0;
+  text-shadow:
+    0 0 5px #e6059b,
+    0 0 15px #b8067c,
+    0 0 30px #5c0e42
+}
+
+@keyframes textColorFemale {
+  from {
+    color: #ff00aa
+
+  }
+
+  to {
+
+    color: #c44198
+
+  }
+
+}
+
+#bornDate {
+  color: white;
+  font-size: 20px;
+  transform: translate(90px,120px);
+  background: black;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  text-shadow:
+    0 0 5px white,
+    0 0 50px #ebeced,
+    0 0 90px #8f9194
+
+}
+
+
+#bornDate div:first-of-type{
+  text-decoration: line-through;
+}
+
+#sent {
+  transform: translate(65px,130px);
+  background: black;
+  font-size: 50px;
+  color: white;
+  border-radius: 100px;
+  border: 5px solid white;
+  transition: box-shadow 0.5s ease 0s;
+}
+
+#sent:hover {
+  cursor: pointer;
+  box-shadow:
+    0 0 5px white,
+    0 0 50px #ebeced,
+    0 0 90px #8f9194
+}
+
+.adkinator {
+  transform: scale(2.5);
+  position: absolute;
+  left: 850px;
+  top: 300px;
+  z-index: 1;
+  animation: adkinatorCheck 6s 1 alternate
+}
+
+@keyframes adkinatorCheck {
+  0% {
+    transform: translate(0,0);
+  }
+
+  10% {
+    transform: translate(5,-5);
+  }
+
+}

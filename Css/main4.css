@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Storm&display=swap');
+
+* {
+  color: red;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Rubik Bubbles', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+html {
+  background: url("../Gifs/bg2.gif");
+  background-size: 40px;
+  animation: lol 5s infinite alternate
+}
+
+@keyframes lol {
+  from {
+
+    background-size: 40px;
+
+  }
+  to {
+
+    background-size: 60px;
+
+  }
+}
+
+#h1 {
+  text-shadow:
+  0 0 5px #ff052f,
+  0 0 15px #c90a2a,
+  0 0 30px #ffffff;
+
+  transform: translate(50px,300px);
+}
+#button {
+  transform: translate(-10px,100px);
+  font-size: 30px;
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  transition: box-shadow,font-size 0.2s ease 0.2s;
+
+}
+
+#button2 {
+  transform: translate(-600px,100px);
+  font-size: 30px;
+  background-color: red;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  transition: box-shadow,font-size 0.2s ease 0.2s;
+}
+
+#h1 h1 {
+  transform: translateX(30px);
+}
+
+#button:hover {
+  box-shadow:
+  0 0 2px #37ff00,
+  0 0 15px #3cdb0f,
+  0 0 30px #0d3003;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#button2:hover {
+  box-shadow:
+  0 0 2px #ff001e,
+  0 0 15px #b50418,
+  0 0 30px #52030c;
+  font-size: 40px;
+  cursor: pointer;
+}
