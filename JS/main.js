@@ -313,7 +313,7 @@ button22.addEventListener("click", function () {
     }
     Arslan.classList.add("toUp")
     setTimeout(function () {
-      window.location.href = "https://google.com"
+      window.location.href = "youwin.html"
     }, 3000);
   }
 
@@ -344,3 +344,4 @@ if (finalForm && finalText && finalButton) {
 }
 
 }
+
