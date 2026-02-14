@@ -1,0 +1,201 @@
+html {
+  background: url("../Img/Sthraf-Game/bg2.gif");
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+
+#Arslan {
+  position: absolute;
+  background: #9c0f05;
+  border: 60px solid #ff1100;
+  border-radius: 1000px;
+  transform: scale(0.3) translate(3000px, 10px);
+  align-self: center;
+  width: 1000px;
+  z-index: -1
+}
+
+
+#mainText {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  color: red;
+  transform: translate(-50%, -50%) translateY(-100px);
+}
+
+#images2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: red;
+  transform: translate(-50%, -50%) scale(0.3) translateY(400px);
+}
+
+#images2 {
+  position: absolute;
+}
+
+#button11, #button22 {
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: red;
+  transform: translate(-50%, -50%) translateY(300px);
+  font-size: 30px;
+}
+
+#button11 {
+  transform: translate(-50%, -50%) translateY(300px) translateX(-200px);
+  color: green;
+  text-shadow:
+  0 0 5px #00ff2a,
+  0 0 15px #06c225,
+  0 0 30px #06911d,
+  0 0 60px #026b14;
+  transition: opacity 0.2s ease;
+  animation: glitch 1s infinite alternate
+}
+
+#button22 {
+  transform: translate(-50%, -50%) translateY(300px) translateX(200px);
+  color: #a10810;
+  text-shadow:
+    0 0 5px #ff2a2a,
+    0 0 15px #ff5252,
+    0 0 30px #ff7a7a,
+    0 0 60px #ffaaaa;
+  transition: opacity 0.2s ease;
+  animation: glitch2 1s infinite alternate
+}
+
+#button11:hover {
+  opacity: 0.5
+}
+#button22:hover {
+  opacity: 0.5
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow:
+    0 0 5px #00ff2a,
+    0 0 15px #06c225,
+    0 0 30px #06911d,
+    0 0 60px #026b14;
+  }
+  25% {
+    text-shadow:
+    0 0 5px #026b14,
+    0 0 15px #06c225,
+    0 0 30px #06911d,
+    0 0 60px #00ff2a;
+  }
+
+  50% {
+    text-shadow:
+    0 0 5px #06c225,
+    0 0 15px #026b14,
+    0 0 30px #00ff2a,
+    0 0 60px #06c225;
+  }
+
+  75% {
+    text-shadow:
+    0 0 5px #06c225,
+    0 0 15px #00ff2a,
+    0 0 30px #026b14,
+    0 0 60px #06c225;
+  }
+  100% {
+    text-shadow:
+    0 0 5px #00ff2a,
+    0 0 15px #06c225,
+    0 0 30px #06911d,
+    0 0 60px #026b14;
+  }
+}
+@keyframes glitch2 {
+  0% {
+    text-shadow:
+      0 0 5px #ff2a2a,
+      0 0 15px #ff5252,
+      0 0 30px #ff7a7a,
+      0 0 60px #ffaaaa;
+  }
+  25% {
+    text-shadow:
+      0 0 5px #ffaaaa,
+      0 0 15px #ff5252,
+      0 0 30px #ff7a7a,
+      0 0 60px #ff2a2a;
+  }
+  50% {
+    text-shadow:
+      0 0 5px #ffaaaa,
+      0 0 15px #ff7a7a,
+      0 0 30px #ff5252,
+      0 0 60px #ff2a2a;
+  }
+  75% {
+    text-shadow:
+      0 0 5px #ff2a2a,
+      0 0 15px #ff5252,
+      0 0 30px #ff7a7a,
+      0 0 60px #ffaaaa;
+  }
+  100% {
+    text-shadow:
+      0 0 5px #ff2a2a,
+      0 0 15px #ff5252,
+      0 0 30px #ff7a7a,
+      0 0 60px #ffaaaa;
+  }
+}
+
+.invertColor {
+  animation: invertColors 10s infinite alternate
+}
+
+@keyframes invertColors {
+  from {filter: invert(0%);}
+  to {filter: invert(100%);}
+}
+
+#images2 img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+
+.invisible {
+  opacity: 0
+}
+
+.visible {
+  animation: opacity1 0.3s 1 forwards
+}
+
+@keyframes opacity1 {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+#redTrack {
+  background: red;
+  border-radius: 100px
+}
+
+.toUp {
+  animation: makeUp 1s 1 forwards
+}
+
+@keyframes makeUp {
+  to {transform: scale(0.3) translate(3000px, 10px) translateY(-2000px);;}
+}
