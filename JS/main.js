@@ -1,5 +1,25 @@
+let loadingScreen = document.createElement("div");
 
+loadingScreen.style.position = "fixed";
+loadingScreen.style.top = "0";
+loadingScreen.style.left = "0";
+loadingScreen.style.width = "100vw";
+loadingScreen.style.height = "100vh";
+loadingScreen.style.backgroundColor = "black";
+
+loadingScreen.style.display = "flex";
+loadingScreen.style.justifyContent = "center";
+loadingScreen.style.alignItems = "center";
+loadingScreen.style.color = "white";
+loadingScreen.style.fontSize = "50px"
+loadingScreen.style.fontFamily = "sans-serif";
+loadingScreen.style.zIndex = "9999";
+loadingScreen.innerText = "зАгРузка тВоей СмеРти"
+
+
+document.body.appendChild(loadingScreen);
 window.onload = function () {
+  loadingScreen.remove()
   let goto = document.getElementById('goto')
   let text = document.getElementById('text')
   let yes = document.getElementById('Yes')
